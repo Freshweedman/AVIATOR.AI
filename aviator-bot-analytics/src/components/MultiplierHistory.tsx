@@ -75,7 +75,7 @@ export default function MultiplierHistory({ rounds }: MultiplierHistoryProps) {
           <p className="text-2xl font-bold text-yellow-600 dark:text-yellow-400">{stats.yellowCount}</p>
         </div>
         <div className="bg-green-50 dark:bg-green-900 p-4 rounded-lg border-l-4 border-green-500">
-          <p className="text-sm text-gray-600 dark:text-gray-300">Verdes (>10x)</p>
+          <p className="text-sm text-gray-600 dark:text-gray-300">Verdes (&gt;10x)</p>
           <p className="text-2xl font-bold text-green-600 dark:text-green-400">{stats.greenCount}</p>
         </div>
       </div>

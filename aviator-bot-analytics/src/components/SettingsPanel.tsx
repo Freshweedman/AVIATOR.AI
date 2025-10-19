@@ -43,7 +43,7 @@ export default function SettingsPanel({
           <ul className="text-sm text-blue-800 dark:text-blue-200 space-y-1">
             <li>• <strong>Vermelho:</strong> Multiplicador ≤ 2x</li>
             <li>• <strong>Amarelo:</strong> Multiplicador 2x - 10x</li>
-            <li>• <strong>Verde:</strong> Multiplicador > 10x</li>
+            <li>• <strong>Verde:</strong> Multiplicador &gt; 10x</li>.
           </ul>
         </div>
 
