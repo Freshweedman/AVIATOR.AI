@@ -1,28 +1,29 @@
-/* eslint-disable @typescript-eslint/no-explicit-any */ // permite uso temporário de 'any'
+// helpers.ts
 
-export function parseData(input: any): string {
-  // Substitua 'any' pelo tipo correto se souber (ex: string | number)
+// Converte entrada em string de forma segura
+export function parseData(input: string | number | object): string {
   if (typeof input === 'string') {
     return input.trim();
   }
   return JSON.stringify(input);
 }
 
+// Soma dois números
 export function sumValues(a: number, b: number): number {
   return a + b;
 }
 
-// Exemplo de função genérica
+// Função genérica
 export function identity<T>(value: T): T {
   return value;
 }
 
-// Exemplo de função que antes usava any
-export function getProperty(obj: Record<string, any>, key: string): any {
+// Retorna propriedade de objeto com tipo genérico
+export function getProperty<T, K extends keyof T>(obj: T, key: K): T[K] {
   return obj[key];
 }
 
-// Função adicional como placeholder
+// Formata multiplicador
 export function formatMultiplier(multiplier: number): string {
   if (multiplier > 10) return `>10x`;
   if (multiplier >= 2) return `2x-10x`;
